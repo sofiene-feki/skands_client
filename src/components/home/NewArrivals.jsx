@@ -20,7 +20,7 @@ export default function NewArrivals() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-const API_BASE_URL_MEDIA = "http://localhost:8000";
+const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
 
   const normalizeMediaSrc = (input) => {
     if (!input) return input;

@@ -49,6 +49,7 @@ function App() {
                 style={{ width: "auto", height: "100px" }}
               />
             </div>
+            <div className="loader">skands loadig...</div>
           </div>
         }
       >

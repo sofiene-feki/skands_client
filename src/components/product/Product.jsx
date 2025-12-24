@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import { addItem } from "../../redux/cart/cartSlice";
 import { openCart } from "../../redux/ui/cartDrawer";
 
-const API_BASE_URL_MEDIA = "http://localhost:8000";
+const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
 
 export default function Product({ product, loading }) {
   const dispatch = useDispatch();

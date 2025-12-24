@@ -8,21 +8,19 @@ import shoes from "../../assets/shoes.png";
 import sac from "../../assets/sac.png";
 
 const categories = [
-  { title: "Coats", image: coat, link: "/category/coats" },
-  { title: "Dresses", image: dress, link: "/category/dresses" },
-  { title: "Shoes", image: shoes, link: "/category/shoes" },
-  { title: "Bags", image: sac, link: "/category/bags" },
+  { title: "Women Coats", image: coat, link: "/category/coats" },
+  { title: "Women Dresses", image: dress, link: "/category/dresses" },
+  { title: "Women Shoes", image: shoes, link: "/category/shoes" },
+  { title: "Women Bags", image: sac, link: "/category/bags" },
 ];
 
 export default function CategoryGrid() {
   return (
-    <section className="mx-auto px-2 md:px-10 py-20">
+    <section className="mx-auto px-2 md:px-10 py-2">
       {/* SECTION TITLE */}
       <h2
         className="
-          text-center mb-14
-          text-2xl md:text-4xl font-serif
-          tracking-wide
+         text-2xl md:text-4xl font-semiBold tracking-tight text-gray-900 my-4 text-center
         "
       >
         Explore a Selection of the Maison's Creations

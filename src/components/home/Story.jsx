@@ -22,7 +22,7 @@ import { useInView } from "react-intersection-observer";
 
 export default function Story() {
   const { userInfo, isAuthenticated } = useSelector((state) => state.user);
-const API_BASE_URL_MEDIA = "http://localhost:8000";
+const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
 
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -168,7 +168,7 @@ const API_BASE_URL_MEDIA = "http://localhost:8000";
   return (
     <div className="mx-auto md:mx-18  px-0 pb-10 ">
       <h2 className="text-2xl md:text-4xl tracking-tight text-gray-900 text-center my-4">
-        RS MODE SERVICES
+      SKANDS SERVICES
       </h2>
 
       {loading ? (

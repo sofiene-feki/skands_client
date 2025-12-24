@@ -22,7 +22,7 @@ export default function Banner() {
 
   const user = useSelector((state) => state.user.userInfo);
 
-const API_BASE_URL_MEDIA = "http://localhost:8000";
+const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
 
   const settings = {
     dots: true,
@@ -153,13 +153,13 @@ const API_BASE_URL_MEDIA = "http://localhost:8000";
                           className="
                             mt-1 flex items-center gap-2 px-4 py-2
                             bg-white/20 backdrop-blur-xl
-                            border border-white/30
+                            border border-white/30 text-sm md:text-base
                             text-white tracking-wide
                             hover:bg-white/30 transition
                           "
                         >
                           DISCOVER ALL
-                          <ChevronDoubleRightIcon className="w-4 h-4" />
+                          {/* <ChevronDoubleRightIcon className="w-4 h-4" /> */}
                         </button>
                       </Link>
 

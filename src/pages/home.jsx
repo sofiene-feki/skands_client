@@ -11,6 +11,7 @@ import Story from "../components/home/Story";
 import Packs from "../components/home/Packs";
 import HomeVideoSection from "../components/home/HomeVideoSection";
 import CategoryGrid from "../components/home/CategoryGrid";
+import { Parallax, Background } from "react-parallax";
 
 export default function Home() {
   return (
@@ -24,15 +25,19 @@ export default function Home() {
     >
       <Banner />
       <CategoryGrid />
-      <NewArrivals />
       {/* <SpecialOffer /> */}
       {/* <Packs /> */}
-      <HomeVideoSection
+        <HomeVideoSection
         poster="/images/video-poster.jpg"
         title="RS MODE"
         subtitle="A new vision of elegance"
       />
-      <BestSellers />
+                    <NewArrivals />
+
+
+      
+
+      {/* <BestSellers /> */}
 
       <Story />
     </div>

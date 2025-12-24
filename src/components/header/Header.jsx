@@ -118,7 +118,7 @@ export default function Header() {
             className={`font-serif transition-all duration-700 transform text-3xl ${
               isHome
                 ? isScrolled
-                  ? "text-xl scale-75 text-black translate-x-[-130px] md:translate-x-[-520px]"
+                  ? "text-xl scale-75 text-black translate-x-[-115px] md:translate-x-[-520px]"
                   : "text-4xl md:text-9xl mt-20 drop-shadow-[0_4px_6px_rgba(0,0,0,0.9)] md:mt-50 text-white scale-100 translate-x-0"
                 : "text-xl text-black scale-75 translate-x-[-110px] md:translate-x-[-500px]"
             }`}

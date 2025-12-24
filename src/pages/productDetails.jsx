@@ -31,7 +31,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const API_BASE_URL_MEDIA = "http://localhost:8000";
+const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
 
 export default function ProductDetails() {
   const { slug } = useParams(); // 👈 make sure your route param is `:slug`
