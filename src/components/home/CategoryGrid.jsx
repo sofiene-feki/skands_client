@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 
-import coat from "../../assets/coat.png";
-import dress from "../../assets/dress.png";
-import shoes from "../../assets/shoes.png";
-import sac from "../../assets/sac.png";
+import coat from "../../assets/coat.PNG";
+import dress from "../../assets/dress.PNG";
+import shoes from "../../assets/shoes.PNG";
+import sac from "../../assets/sac.PNG";
 
 const categories = [
   { title: "Women Coats", image: coat, link: "/category/coats" },
