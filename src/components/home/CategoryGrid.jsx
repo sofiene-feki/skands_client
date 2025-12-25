@@ -20,10 +20,10 @@ export default function CategoryGrid() {
       {/* SECTION TITLE */}
       <h2
         className="
-         text-2xl md:text-4xl font-semiBold tracking-tight text-gray-900 my-4 text-center
+         text-xl md:text-4xl  tracking-tight text-gray-700 my-4 px-8 text-center
         "
       >
-        Explore a Selection of the Maison's Creations
+        Explore a Selection of the SKANDS Creations
       </h2>
 
       {/* GRID */}
@@ -42,18 +42,19 @@ export default function CategoryGrid() {
 
 function CategoryCard({ cat }) {
   const { ref, inView } = useInView({
-    threshold: 0.3, // Trigger when 30% visible
+    threshold: 0.6, // Trigger when 30% visible
     triggerOnce: true,
   });
 
   return (
     <Link
       ref={ref}
-      to={cat.link}
+      to={""}
       className="flex flex-col items-center"
     >
       {/* IMAGE */}
-      <div className="relative w-full h-[200px] overflow-hidden bg-neutral-100">
+      <div className="relative w-full h-[180px] shadow-md
+ border border-gray-300 overflow-hidden bg-neutral-100">
         <img
           src={cat.image}
           alt={cat.title}
@@ -69,7 +70,7 @@ function CategoryCard({ cat }) {
       {/* TEXT (APPEARS AFTER IMAGE ANIMATION) */}
       <h3
         className={`
-          mt-5 text-sm md:text-base
+          mt-2 text-xs md:text-base
           tracking-widest uppercase text-center
           transform transition-all duration-700 ease-out
           delay-[900ms]

@@ -1,45 +1,39 @@
+import React, { useRef } from "react";
 import Banner from "../components/home/Banner";
-import BannerBottom from "../components/home/BannerBottom";
-import BestSellers from "../components/home/BestSellers";
-import Category from "../components/home/Category";
-import ModelViewer from "../components/home/ModelViewer";
-import NewArrivals from "../components/home/NewArrivals";
-import SpecialOffer from "../components/home/SpecialOffer";
-import React from "react";
-import bg from "../assets/bg.jpg";
-import Story from "../components/home/Story";
-import Packs from "../components/home/Packs";
-import HomeVideoSection from "../components/home/HomeVideoSection";
 import CategoryGrid from "../components/home/CategoryGrid";
-import { Parallax, Background } from "react-parallax";
+import HomeVideoSection from "../components/home/HomeVideoSection";
+import NewArrivals from "../components/home/NewArrivals";
+import Story from "../components/home/Story";
 
 export default function Home() {
+  const newArrivalsRef = useRef(null);
+
   return (
-    <div
-      className="bg-cover bg-center bg-no-repeat"
-      style={{
-        // backgroundImage: `url(${bg})`,
-        backgroundColor: "#fff", // fallback color
-        backgroundAttachment: "fixed", // makes background fixed
-      }}
-    >
+    <div className="bg-white relative">
+      {/* Top Banner */}
       <Banner />
       <CategoryGrid />
-      {/* <SpecialOffer /> */}
-      {/* <Packs /> */}
-        <HomeVideoSection
-        poster="/images/video-poster.jpg"
-        title="RS MODE"
-        subtitle="A new vision of elegance"
-      />
-                    <NewArrivals />
 
+      {/* Sticky Video Section */}
+      <div className="relative z-0">
+        <div className="sticky top-0 z-10">
+         <HomeVideoSection
+  title="SKANDS"
+  subtitle="A new vision of elegance"
+  triggerRef={newArrivalsRef}
+/>
+        </div>
 
-      
+        {/* Next sections scroll over the sticky video */}
+        <div ref={newArrivalsRef} className="relative z-20">
+          <NewArrivals />
+        </div>
 
-      {/* <BestSellers /> */}
-
-      <Story />
+        {/* Story always above video */}
+        <div className="relative z-20">
+          <Story />
+        </div>
+      </div>
     </div>
   );
 }

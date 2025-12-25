@@ -61,9 +61,9 @@ const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
   }, []);
 
   return (
-    <div className="mx-auto md:mx-10 py-10">
+    <div className="mx-auto md:mx-10 py-2 bg-white">
       {/* ✅ Section Title */}
-      <h2 className="text-2xl md:text-4xl font-semiBold tracking-tight text-gray-900 my-4 text-center">
+      <h2 className="text-xl md:text-4xl font-semiBold tracking-tight text-gray-00 my-4 text-center">
         NEW COLLECTION <span className="text-[#87a736]">2026</span>
       </h2>
 
