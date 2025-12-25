@@ -167,7 +167,7 @@ const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
 
   return (
     <div className="mx-auto md:mx-18  px-0 pb-10 bg-white">
-      <h2 className="text-2xl md:text-4xl tracking-tight text-gray-900 text-center py-4">
+      <h2 className="text-xl md:text-4xl tracking-tight text-gray-900 text-center py-4">
       SKANDS SERVICES
       </h2>
 

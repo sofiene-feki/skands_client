@@ -13,7 +13,7 @@ export default function Footer() {
             </h4>
             <div className="text-sm text-gray-50 space-y-3 leading-relaxed ">
               <p>
-                <strong>Address:</strong> 6 Rue 2 Mars 1934, Sousse, Tunisia
+                <strong>Address:</strong> Rue de la Feuille d'Érable, Tunis 1053
               </p>
               <p>
                 <strong>Phone:</strong>{" "}
@@ -21,7 +21,7 @@ export default function Footer() {
                   href="+216 58 811 911"
                   className="hover:underline text-[#87a736] transition-colors"
                 >
-                  +216 20 235 294
+                  +216 20 234 567
                 </a>
               </p>
               <p>
@@ -31,7 +31,7 @@ export default function Footer() {
 artisanatbargaoui.com"
                   className="hover:underline text-[#87a736] transition-colors"
                 >
-                  contact@rsmode.com
+                  contact@skands.com
                 </a>
               </p>
             </div>
@@ -119,8 +119,7 @@ artisanatbargaoui.com"
             </h4>
             <iframe
               className="w-full  rounded-md border border-gray-300 shadow-md block"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.659726120883!2d10.334292175545308!3d36.73073267161285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd49c89b37a6a5%3A0x6a12cbc8089fe2ee!2sArtisanat%20Bargaoui!5e0!3m2!1sen!2stn!4v1757974902922!5m2!1sen!2stn"
-              allowFullScreen=""
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.756528436905!2d10.272815175550468!3d36.84830666498683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd4bceadbf8009%3A0xd6859df6645b2f2!2sSkands!5e0!3m2!1sfr!2stn!4v1766669643200!5m2!1sfr!2stn"              allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Super siesta Ezzahra Boumhel Hammam lif"

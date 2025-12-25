@@ -117,7 +117,7 @@ export default function HomeVideoSection({ title, subtitle, triggerRef }) {
   };
 
   return (
-    <section className="sticky top-0 w-full h-[550px] overflow-hidden bg-black">
+    <section className="sticky top-0 w-full h-[550px] my-6 overflow-hidden bg-black">
       <video
         ref={videoRef}
         src={rsVideo}
