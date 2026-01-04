@@ -22,8 +22,8 @@ export default function Banner() {
 
   const user = useSelector((state) => state.user.userInfo);
 
-// const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
- const API_BASE_URL_MEDIA = "http://localhost:8000";
+const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
+//  const API_BASE_URL_MEDIA = "http://localhost:8000";
 
   const settings = {
     dots: true,

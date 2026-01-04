@@ -16,7 +16,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/bragaoui.PNG";
+import logo from "../../assets/bragaoui.png";
 import logoBlack from "../../assets/bragaouiBlack.png";
 
 import { useDispatch, useSelector } from "react-redux";
