@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 
-import coat from "../../assets/coat.PNG";
-import dress from "../../assets/dress.PNG";
-import shoes from "../../assets/shoes.PNG";
-import sac from "../../assets/sac.PNG";
+import coat from "../../assets/coat.webp";
+import dress from "../../assets/dress.webp";
+import shoes from "../../assets/shoes.webp";
+import sac from "../../assets/sac.webp";
 
 const categories = [
   { title: "Women Coats", image: coat, link: "/category/coats" },
@@ -16,11 +16,11 @@ const categories = [
 
 export default function CategoryGrid() {
   return (
-    <section className="mx-auto px-2 md:px-10 py-2">
+    <section className="mx-auto px-2 md:px-30 py-2 md:py-10 bg-white">
       {/* SECTION TITLE */}
       <h2
         className="
-         text-xl md:text-4xl  tracking-tight text-gray-700 my-4 px-8 text-center
+         text-xl md:text-3xl tracking-tight text-gray-900 mb-8 px-14 text-center
         "
       >
         Explore a Selection of the SKANDS Creations
@@ -53,7 +53,7 @@ function CategoryCard({ cat }) {
       className="flex flex-col items-center"
     >
       {/* IMAGE */}
-      <div className="relative w-full h-[180px] shadow-md
+      <div className="relative w-full h-[210px] md:h-[420px] shadow-md
  border border-gray-300 overflow-hidden bg-neutral-100">
         <img
           src={cat.image}

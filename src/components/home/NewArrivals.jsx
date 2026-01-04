@@ -61,9 +61,10 @@ const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
   }, []);
 
   return (
-    <div className="mx-auto md:mx-10 py-2 bg-white">
+        <div className="w-full  bg-white">
+            <div className="mx-auto md:mx-30 py-2  md:py-10 bg-white">
       {/* ✅ Section Title */}
-      <h2 className="text-xl md:text-4xl font-semiBold tracking-tight text-gray-00 my-4 text-center">
+      <h2 className="text-xl md:text-3xl font-semiBold tracking-tight text-gray-00 mb-4 text-center">
         NEW COLLECTION <span className="text-[#87a736]">2026</span>
       </h2>
 
@@ -71,12 +72,32 @@ const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
       {loading ? (
         <LoadingProduct length={isMobile ? 1 : 4} cols={4} />
       ) : (
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
-          {products.map((product) => (
-            <Product key={product._id || product.slug} product={product} />
-          ))}
-        </div>
+     <div className="space-y-4">
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
+    {products.map((product) => (
+      <Product key={product._id || product.slug} product={product} />
+    ))}
+  </div>
+
+  <div className="flex justify-center">
+    <button
+      className="
+        flex items-center gap-2 px-6 py-2
+        bg-white/20 backdrop-blur-xl
+        border border-black/30
+        text-sm md:text-base tracking-wide
+        hover:bg-white/30 transition
+      "
+    >
+      SHOW MORE
+    </button>
+  </div>
+</div>
+
       )}
     </div>
+        </div>
+
+  
   );
 }

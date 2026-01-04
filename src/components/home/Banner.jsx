@@ -22,7 +22,8 @@ export default function Banner() {
 
   const user = useSelector((state) => state.user.userInfo);
 
-const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
+// const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
+ const API_BASE_URL_MEDIA = "http://localhost:8000";
 
   const settings = {
     dots: true,
@@ -122,7 +123,7 @@ const API_BASE_URL_MEDIA = "https://skands-server.onrender.com";
   );
 
   return (
-    <div className="h-full mx-auto md:mx-10 bg-transparent">
+    <div className="h-full mx-auto md:mx-30 bg-transparent">
       <div className="relative w-full">
         <Slider {...settings}>
           {loading

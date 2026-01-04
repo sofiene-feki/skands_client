@@ -16,7 +16,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../../assets/bragaoui.jpg";
+import logo from "../../assets/bragaoui.PNG";
 import logoBlack from "../../assets/bragaouiBlack.png";
 
 import { useDispatch, useSelector } from "react-redux";
@@ -118,12 +118,12 @@ export default function Header() {
             className={`font-serif transition-all duration-700 transform text-3xl ${
               isHome
                 ? isScrolled
-                  ? "text-xl scale-75 text-black translate-x-[-115px] md:translate-x-[-520px]"
+                  ? "text-xl scale-75 text-black translate-x-[-95px] md:translate-x-[-520px]"
                   : "text-4xl md:text-9xl mt-20 drop-shadow-[0_4px_6px_rgba(0,0,0,0.9)] md:mt-50 text-white scale-100 translate-x-0"
-                : "text-xl text-black scale-75 translate-x-[-110px] md:translate-x-[-500px]"
+                : "text-xl text-black scale-75 translate-x-[-95px] md:translate-x-[-500px]"
             }`}
           >
-SKANDS          </p>
+Clin Doeil Store          </p>
         </div>
 
         {/* ✅ Navbar Content */}
@@ -132,7 +132,7 @@ SKANDS          </p>
           <div className="flex items-center mr-2 rounded-full gap-1">
             <Link to="/" className="md:flex items-center  h-9 md:h-16">
               <img
-                className="h-full rounded-full shadow-2xl w-auto"
+                className="h-full rounded-full bg-white shadow-2xl w-auto"
                 src={isScrolled || !isHome ? logoBlack : logo}
                 alt="Your Company"
                 draggable={false}

@@ -81,7 +81,7 @@ export default function Product({ product, loading }) {
               <img
                 src={imageSrc}
                 alt={product.Title}
-                className="w-full h-72 object-cover group-hover:scale-105 transition-transform"
+                className="w-full h-72 md:h-96 object-cover group-hover:scale-105 transition-transform"
               />
             </div>
 
